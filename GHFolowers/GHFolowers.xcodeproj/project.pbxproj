@@ -22,6 +22,7 @@
 		514DB2CF28D10C3400E604E8 /* UIVIewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514DB2CE28D10C3400E604E8 /* UIVIewController+Ext.swift */; };
 		514DB2D628D1C6F100E604E8 /* Followers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514DB2D528D1C6F100E604E8 /* Followers.swift */; };
 		514DB2D828D1C7B100E604E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514DB2D728D1C7B100E604E8 /* User.swift */; };
+		514DB2DB28D1DB0C00E604E8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514DB2DA28D1DB0C00E604E8 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		514DB2CE28D10C3400E604E8 /* UIVIewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Ext.swift"; sourceTree = "<group>"; };
 		514DB2D528D1C6F100E604E8 /* Followers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Followers.swift; sourceTree = "<group>"; };
 		514DB2D728D1C7B100E604E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		514DB2DA28D1DB0C00E604E8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		514DB2A928D0A1DD00E604E8 /* GHFolowers */ = {
 			isa = PBXGroup;
 			children = (
+				514DB2D928D1DAF900E604E8 /* Managers */,
 				514DB2D428D1C6D600E604E8 /* Model */,
 				514DB2D128D1C0D800E604E8 /* Custom views */,
 				514DB2D028D1C0A400E604E8 /* Screens */,
@@ -132,6 +135,14 @@
 				514DB2D728D1C7B100E604E8 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		514DB2D928D1DAF900E604E8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				514DB2DA28D1DB0C00E604E8 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				514DB2CD28D0F6D400E604E8 /* GFAlertVC.swift in Sources */,
 				514DB2CB28D0F61200E604E8 /* GFBodyLabel.swift in Sources */,
 				514DB2C928D0F32000E604E8 /* GFTitleLabel.swift in Sources */,
+				514DB2DB28D1DB0C00E604E8 /* NetworkManager.swift in Sources */,
 				514DB2C728D0E65A00E604E8 /* FollowerListVC.swift in Sources */,
 				514DB2AB28D0A1DD00E604E8 /* AppDelegate.swift in Sources */,
 				514DB2AD28D0A1DD00E604E8 /* SceneDelegate.swift in Sources */,
