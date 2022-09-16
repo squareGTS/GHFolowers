@@ -5,29 +5,32 @@
 //  Created by Maxim Bekmetov on 14.09.2022.
 //
 
-import Foundation
+import UIKit
 
-class NetworkManger {
-
-    static let shared = NetworkManger()
-    let baseURL = "https://api.github.com/users/"
+class NetworkManager {
+    static let shared   = NetworkManager()
+    private let baseURL = "https://api.github.com/users/"
+    let cache           = NSCache<NSString, UIImage>()
 
     private init() {}
 
-    func getFolowers(for username: String, page: Int, completed: @escaping (Result<[Follower], GFError>) -> Void) {
+
+    func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], GFError>) -> Void) {
         let endpoint = baseURL + "\(username)/followers?per_page=100&page=\(page)"
 
-        guard let url = URL(string: endpoint) else { return }
-        completed(.failure(.invalidUserName))
+        guard let url = URL(string: endpoint) else {
+            completed(.failure(.invalidUserName))
+            return
+        }
 
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
 
             if let _ = error {
                 completed(.failure(.unableToComplete))
                 return
             }
 
-            guard let response = response as? HTTPURLResponse,response.statusCode == 200 else {
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 completed(.failure(.invalidResponse))
                 return
             }
@@ -45,8 +48,8 @@ class NetworkManger {
             } catch {
                 completed(.failure(.invalidData))
             }
+        }
 
-        }.resume()
+        task.resume()
     }
-
 }
