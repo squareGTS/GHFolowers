@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5135B91F28F9766100ACBC1E /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5135B91E28F9766100ACBC1E /* PersistanceManager.swift */; };
 		514DB2AB28D0A1DD00E604E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514DB2AA28D0A1DD00E604E8 /* AppDelegate.swift */; };
 		514DB2AD28D0A1DD00E604E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514DB2AC28D0A1DD00E604E8 /* SceneDelegate.swift */; };
 		514DB2B428D0A1DF00E604E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514DB2B328D0A1DF00E604E8 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5135B91E28F9766100ACBC1E /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		514DB2A728D0A1DD00E604E8 /* GHFolowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFolowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		514DB2AA28D0A1DD00E604E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		514DB2AC28D0A1DD00E604E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				514DB2DA28D1DB0C00E604E8 /* NetworkManager.swift */,
+				5135B91E28F9766100ACBC1E /* PersistanceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				51C215FD28D8CC0A0016AF31 /* GFFollowerItemVC.swift in Sources */,
 				51C077C328D8A4C3005F709C /* GFItemInfoView.swift in Sources */,
 				514DB2E128D21F9000E604E8 /* FollowerCell.swift in Sources */,
+				5135B91F28F9766100ACBC1E /* PersistanceManager.swift in Sources */,
 				514DB2DE28D20C2200E604E8 /* GFError.swift in Sources */,
 				51C0779828D4A66F005F709C /* GFUserInfoHeaderVC.swift in Sources */,
 				514DB2CD28D0F6D400E604E8 /* GFAlertVC.swift in Sources */,
