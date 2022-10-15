@@ -169,6 +169,7 @@ class FollowerListVC: GFDataLoadingVC {
         Task {
             do {
                 let user = try await NetworkManager.shared.getUserInfo(for: username)
+                addUserToFavorites(user: user)
                 dismissLoadingView()
             } catch {
                 if let gfError = error as? GFError {
@@ -176,8 +177,8 @@ class FollowerListVC: GFDataLoadingVC {
                 } else {
                     presentDefaultError()
                 }
+                  dismissLoadingView()
             }
-            dismissLoadingView()
         }
     }
 
