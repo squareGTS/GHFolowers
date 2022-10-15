@@ -31,6 +31,7 @@ enum PersistanceManager {
                             completed(.alreadyInFavorites)
                             return
                 }
+                    
                     favorites.append(favorite)
 
                 case .remove:
@@ -42,9 +43,7 @@ enum PersistanceManager {
             case .failure(let error):
                 completed(error)
             }
-
         }
-
     }
 
     static func retriveFavorites(completed: @escaping (Result<[Follower], GFError>) -> Void) {

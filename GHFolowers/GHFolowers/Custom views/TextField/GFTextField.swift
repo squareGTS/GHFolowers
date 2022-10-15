@@ -11,7 +11,6 @@ class GFTextField: UITextField {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
         configure()
     }
 
@@ -23,7 +22,6 @@ class GFTextField: UITextField {
         translatesAutoresizingMaskIntoConstraints = false
 
         layer.cornerRadius = 10
-
         layer.borderWidth = 2
         layer.borderColor = UIColor.systemGray4.cgColor
 
@@ -40,5 +38,4 @@ class GFTextField: UITextField {
         clearButtonMode = .whileEditing
         placeholder = "Enter a username"
     }
-
 }

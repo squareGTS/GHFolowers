@@ -50,9 +50,7 @@ class GFItemInfoVC: UIViewController {
         actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
     }
 
-    @objc func actionButtonTapped() {
-
-    }
+    @objc func actionButtonTapped() {}
 
     private func layoutUI() {
         view.addSubviews(stackView, actionButton)

@@ -131,9 +131,9 @@
 				514DB2DC28D20BA100E604E8 /* Utilities */,
 				514DB2D928D1DAF900E604E8 /* Managers */,
 				514DB2D428D1C6D600E604E8 /* Model */,
+				514DB2D228D1C10B00E604E8 /* Extensions */,
 				514DB2D128D1C0D800E604E8 /* Custom views */,
 				514DB2D028D1C0A400E604E8 /* Screens */,
-				514DB2D228D1C10B00E604E8 /* Extensions */,
 				514DB2D328D1C1E700E604E8 /* Support */,
 			);
 			path = GHFolowers;
@@ -154,13 +154,13 @@
 			isa = PBXGroup;
 			children = (
 				5135B92228F9B23000ACBC1E /* TabBarControllers */,
-				514DB2DF28D21F7000E604E8 /* Cells */,
-				51C0778E28D47090005F709C /* Buttons */,
 				51C0779128D470DC005F709C /* Labels */,
-				51C0779028D470A2005F709C /* TextField */,
-				51C0778F28D47099005F709C /* ImageViews */,
 				51C0779628D4A63F005F709C /* ViewControllers */,
+				51C0778F28D47099005F709C /* ImageViews */,
+				51C0779028D470A2005F709C /* TextField */,
+				51C0778E28D47090005F709C /* Buttons */,
 				51C0778D28D47088005F709C /* Views */,
+				514DB2DF28D21F7000E604E8 /* Cells */,
 			);
 			path = "Custom views";
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 		514DB2DC28D20BA100E604E8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				514DB2DD28D20C2200E604E8 /* GFError.swift */,
 				51C0778B28D3B15F005F709C /* UIHelper.swift */,
+				514DB2DD28D20C2200E604E8 /* GFError.swift */,
 				51C0779B28D4B5F4005F709C /* Constants.swift */,
 			);
 			path = Utilities;
